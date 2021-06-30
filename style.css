@@ -1,7 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+}
 header {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 300px;
-    background-color: #d0d1d3;
+    background: url('img/bg1.jpg') center no-repeat;
+    background-size: cover;
+}
+h1 {
+    color: #fff;
+    font-size: 4rem;
+    font-family: 'Courier New', Courier, Arial;
+}
+footer {
+    padding: 20px 30px 60px;
+    text-align: center;
+}
+footer .links {
+    margin-bottom: 50px;
+}
+footer .links > a {
+    counter-reset: #636b6f;
+    padding: 0 25px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing:  .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.copyright-img,
+.copyright-img a {
+    padding-top: 20px;
+    color: rgb(1, 56, 59)
+}
+.news {
+    background-color: #fff;
+    padding: 50px 10px 30px;
+}
+article {
+    width: 768px;
+    margin: 0 auto 30px;
+    padding: 6px 15px;
+    border-bottom: 1px solid rgb(128, 128, 128);
+}
+article a {
+    color: rgb(33, 37, 41);
+    text-decoration: none;
+}
+article a:hover {
+    color: #0085a1;
+}
+article .article-meta {
+    padding: 5px 0;
+}
+article .article-meta a {
+    font-style: italic;
+    font-weight: 600;
+    color: orange;
+    
+}
+article:nth-child(1) a h2::before,
+article:nth-child(2) a h2::before {
+    content: 'New!';
+    padding-right: 5px;
+    color: blue;
+}
+article h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+}
+article:nth-child(even) a h2 {
+    color: red;
+}
+article img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
